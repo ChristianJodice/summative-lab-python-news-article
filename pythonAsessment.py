@@ -123,9 +123,10 @@ def count_sentences(text):
     # If no sentences found, return 1
     return len(non_empty_sentences) if non_empty_sentences else 1
 
-def main():
+def run_interactive_analysis():
     """
-    Main function to run the text analysis program.
+    Run the interactive text analysis program.
+    This function contains the main program logic with while loops, for loops, and conditionals.
     """
     print("=== News Article Text Analysis ===")
     print()
@@ -197,5 +198,6 @@ def main():
     
     print(f"\nTotal analyses performed: {analysis_count}")
 
+# Only run the interactive program if this file is run directly
 if __name__ == "__main__":
-    main()
+    run_interactive_analysis()
